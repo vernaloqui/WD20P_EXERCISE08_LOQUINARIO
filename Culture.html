@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Culture of Infanta</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cookie&display=swap" rel="stylesheet">
+        <style>
+            
+             #banner{
+                background-image: url(images/mountain_landscape.jpg);
+                background-size: cover;
+                border-top-left-radius: 10%;
+                border-top-right-radius: 10%;
+            }
+            h1{
+                text-align: center;
+                font-size: 6rem;
+                font-family: "Cookie";
+                padding: 20px;
+                margin: 15px;
+                z-index: 1;
+                opacity: 0.8;              
+            }
+            #nav-menu{
+                text-align: center;
+                font-size: 2.5rem;
+                font-family: "Bree Serif";
+                padding: 20px;
+                margin: 15px;
+                z-index: 1;
+                opacity: 0.5;
+            }
+            #nav-menu a{
+                
+                text-align: center;
+                font-size: 30px;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            #nav-menu a:hover{
+                background-color: rgb(238, 210, 214);
+                color:black;
+            }
+
+            #footer-menu{
+                font-size: 15pt;
+                width:100%;
+                text-align:center;
+                background-image: url(images/mountain_landscape.jpg);
+                background-size: cover;
+                margin: 15px 5px 5px 5px;
+                font-family: 'Bree Serif'
+            }
+            #Subscribe{
+                height: 35px;
+                font-family: 'Bree Serif';
+            }
+            #EmailSub{
+                height: 30px;
+                font-family: 'Bree Serif';
+            }
+            .container{
+                width: 1600px;
+                
+                font-family: 'Bree Serif';
+                font-size: 20px;
+            }
+            .image{
+                width:400px;
+                border: 0.5px solid black;  
+            }
+            h3{
+                font-family: 'Cookie';
+                font-size: 3rem;
+            }
+            
+
+        </style>
+    </head>
+
+    <body style="background-color: aliceblue;">
+        <center>
+
+        <div id="banner">
+
+            <h1>Discover Infanta</h1>
+        </div>
+        
+        <div id="nav-menu">
+                <a href="index.html" id="Home">Home</a>
+                <a href="About.html" id="About">About</a>
+                <a href="Tourism.html" id="Tourism">Tourism</a>
+                <a href="Culture.html" id="Culture">Culture</a>
+                <a href="Book a visit.html" id="Book">Book a visit</a>   
+        </div>
+        
+
+        <div class="container">
+            <section id="Gastronomy">
+            <h3>Local Food Products and Cuisine</h3>
+            <table>
+            <tr>
+                <td><div class="image">
+                    <img src="images/Suman.jpg" style="width: 400px; height:250px;">
+                </div></td>
+                <td><div class="image">
+                    <img src="images/sinantol.jpg" style="width: 400px; height:250px;">
+                </div></td>
+                <td><div class="image">
+                    <img src="images/suakng sasa.jpg" style="width: 400px; height:250px;">
+                </div></td>
+                <td><div class="image">
+                    <img src="images/pasingaw.jpg" style="width: 400px; height:250px;">
+                </div></td>
+            </tr>
+            <tr>
+                <td style="text-align:center;">Suman sa gata</td>
+                <td style="text-align:center;">Sinantol</td>
+                <td style="text-align:center;">Sukang sasa</td>
+                <td style="text-align:center;">Pasingaw</td>
+            </tr>
+            </table>
+            </section>
+            <br>
+            <section id="Landmarks">
+                <h3>Iconic Markers/Symbols</h3>
+                <table>
+                    <tr>
+                        <td><div class="image">
+                            <img src="images/bridge.jpg" style="width: 400px; height:250px;">
+                        </div></td>
+                        <td><div class="image">
+                            <img src="images/Infanta Arch.jfif" style="width: 400px; height:250px;">
+                        </div></td>
+                        <td><div class="image">
+                            <img src="images/3lions.jpg" style="width: 400px; height:250px;">
+                        </div></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center;">Querocep Bridge</td>
+                        <td style="text-align:center;">Infanta Welcome Arch</td>
+                        <td style="text-align:center;">Three Lions Marker</td>
+                        
+                    </tr>
+                    </table>
+            </section>
+        </div>
+
+           
+    </center>
+        <div id="footer">
+            <table id="footer-menu">
+                <tr>
+                    <th>Contact Us</th>
+                    <th>Follow Us</th>
+                    <th>Subscribe for Updates & Offers</th>
+                </tr>
+                <tr>
+                    <td>Ask us anything! We’re here to answer any questions you may have. <br>
+                        Email: <a href="mailto:info@mysite.com">info@mysite.com</a></td>
+                    <td><a href="https://web.facebook.com/infantatourismoffice">
+                        <img src="images/fb.png" style="display:block;" height="40px" width="40px"></a>
+                    </td>
+                    <td><input type="email" id="EmailSub" name="EmailSub" placeholder="Enter email"><button type="button" name="Subscribe" id="Subscribe">Subscribe</button></td>
+                </tr>
+            </table>
+        </div>
+
+    </body>
+</html>

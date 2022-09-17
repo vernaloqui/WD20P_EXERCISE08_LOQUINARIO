@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cookie&display=swap" rel="stylesheet">
+        
+        <style>
+            #banner{
+                background-image: url(images/mountain_landscape.jpg);
+                background-size: cover;
+                border-top-left-radius: 10%;
+                border-top-right-radius: 10%;
+            }
+            h1{
+                text-align: center;
+                font-size: 6rem;
+                font-family: "Cookie";
+                padding: 20px;
+                margin: 15px;
+                z-index: 1;
+                opacity: 0.8;              
+            }
+            #nav-menu{
+                text-align: center;
+                font-size: 2.5rem;
+                font-family: "Bree Serif";
+                padding: 20px;
+                margin: 15px;
+                z-index: 1;
+                opacity: 0.5;
+            }
+            #nav-menu a{
+                
+                text-align: center;
+                font-size: 30px;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            #nav-menu a:hover{
+                background-color: rgb(238, 210, 214);
+                color:black;
+            }
+           
+            #footer-menu{
+                font-size: 15pt;
+                width:100%;
+                text-align:center;
+                background-image: url(images/mountain_landscape.jpg);
+                background-size: cover;
+                margin: 15px 5px 5px 5px;
+                font-family: 'Bree Serif'
+            }
+            #row{
+                display: flex;
+            }
+            #column{
+                flex: 50%;
+                padding: 5px;
+            }
+            #schedule{
+                background-color:rgb(238, 210, 214);
+                font-family: 'Bree Serif';
+            }
+            
+            #schedule{
+                margin: 20px 25px 25px 20px;
+            }
+            #Subscribe{
+                height: 35px;
+                font-family: 'Bree Serif';
+            }
+            #EmailSub{
+                height: 30px;
+                font-family: 'Bree Serif';
+            }
+            section td{
+                font-family: 'Bree Serif';
+            }
+            
+            
+        </style>
+    </head>
+    <body style="background-color: aliceblue;">
+        <center>
+        <div id="banner">
+
+            <h1>Discover Infanta</h1>
+        </div>
+        
+        <div id="nav-menu">
+                <a href="index.html" id="Home">Home</a>
+                <a href="About.html" id="About">About</a>
+                <a href="Tourism.html" id="Tourism">Tourism</a>
+                <a href="Culture.html" id="Culture">Culture</a>
+                <a href="Book a visit.html" id="Book">Book a visit</a>   
+        </div>
+        
+        <div id="row">
+            <div id="column">
+                <img src="images/falls.jpg" alt="Falls">
+            </div>
+            <div id="column">
+                <form id="schedule">
+                <fieldset>
+                <table>
+
+                    <thead>
+                        <th colspan="2">REGISTER HERE</th>
+                    </thead>
+                    <tr>
+                        <td>FIRST NAME:</td>
+                        <td><input type="text" name="fname" id="fname"></td>
+                    </tr>
+                    <tr>
+                        <td>MIDDLE NAME:</td>
+                        <td><input type="text" name="mname" id="mname"></td>
+                    </tr>
+                    <tr>
+                        <td>LAST NAME:</td>
+                        <td><input type="text" name="lname" id="lname"></td>
+                    </tr>
+                    <tr>
+                        <td>AGE:</td>
+                        <td><input type="text" name="age" id="age"></td>
+                    </tr>
+                    <tr>
+                        <td>BIRTHDATE:</td>
+                        <td><input type="date" name="bdate" id="bdate" style="font-family: 'Bree Serif';"></td>
+                    </tr>
+                    <tr>
+                        <td>ADDRESS:</td>
+                        <td><textarea name="Address" id="Address"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>CELLPHONE NUMBER:</td>
+                        <td><input type="teL" name="cellNumber" id="cellNumber" placeholder="09XXXXXXXXX" style="font-family: Bree Serif;"></td>
+                    </tr>
+                    <tr>
+                        <td>GENDER:</td>
+                        <td>
+                            <select name=""gender" id="gender">
+                                <option value="male" style="font-family: 'Bree Serif';">MALE</option>
+                                <option value="female" style="font-family: 'Bree Serif';">FEMALE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>START DATE OF VISIT:</td>
+                        <td><input type="date" name="visit" id="visit" style="font-family: 'Bree Serif';"></td>
+                    </tr>
+                    <tr>
+                        <td>END DATE OF VISIT:</td>
+                        <td><input type="date" name="visit" id="visit" style="font-family: 'Bree Serif';"></td>
+                    </tr>
+                    <tr>
+                        <td>COVID-19 VACCINATED?:</td>
+                        <td>
+                            <select name="vax" id="vax">
+                                <option value="full" style="font-family: 'Bree Serif';">Fully Vaccinated</option>
+                                <option value="not" style="font-family: 'Bree Serif';">Not Vaccinated</option>
+                                <option value="booster" style="font-family: 'Bree Serif';">With Booster</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>COPY OF VACCINATION CARD:</td>
+                        <td><input type="file" name="pic" id="pic" style="font-family: 'Bree Serif';"></td>
+                    </tr>
+                    <tr>
+                        <td>NOTES:</td>
+                        <td><textarea name="notes" id="notes" style="font-family: 'Bree Serif';">Enter any special request here</textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" name="submit" value="submit">
+                        </td>
+                    </tr>
+                </table>            
+                </fieldset> 
+                </form>
+            </div>
+        </div>
+            
+        
+        <footer>
+            <table id="footer-menu">
+                <tr>
+                    <th>Contact Us</th>
+                    <th>Follow Us</th>
+                    <th>Subscribe for Updates & Offers</th>
+                </tr>
+                <tr>
+                    <td>Ask us anything! We’re here to answer any questions you may have. <br>
+                        Email: <a href="mailto:info@mysite.com">info@mysite.com</a></td>
+                    <td id="fb-img"><a href="https://web.facebook.com/infantatourismoffice">
+                        <img src="images/fb.png" style="display:block;" height="40px" width="40px"></a>
+                    </td>
+                    <td><input type="email" id="EmailSub" name="EmailSub" placeholder="Enter email"><button type="button" name="Subscribe" id="Subscribe">Subscribe</button></td>
+                </tr>
+            </table>
+        </footer>
+    </center>
+    </body>
+</html>
